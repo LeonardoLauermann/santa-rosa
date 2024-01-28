@@ -48,6 +48,7 @@ body {
 }
 .social-icon__link:hover {
   transform: translateY(-10px);
+  filter: drop-shadow(2px 2px 2px rgb(21, 52, 99));
 }
 
 .menu__link {
@@ -70,13 +71,4 @@ body {
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
-}
-
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
 }
