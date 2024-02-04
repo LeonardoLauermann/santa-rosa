@@ -1,0 +1,8 @@
+<section class="card-container">
+  <ng-container *ngFor="let item of valores; trackBy: trackbyFn">
+    <div class="card">
+      <p class="title">{{ item.Titulo }}</p>
+      <p class="text" [innerHTML]="item.Texto"></p>
+    </div>
+  </ng-container>
+</section>

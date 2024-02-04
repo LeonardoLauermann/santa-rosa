@@ -1,0 +1,34 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  justify-items: center;
+  margin: 100px 0;
+}
+
+.card {
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  height: 60px;
+  line-height: 60px;
+  color: var(--branco);
+  background-color: var(--azul);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
