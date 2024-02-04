@@ -12,7 +12,7 @@ export const valores: Valores[] = [
       'Ser referência em tornearia metalúrgica, com excelência em metalurgia, usinagem e soldagem, liderando com inovação e qualidade.',
   },
   {
-    Titulo: 'Missão',
+    Titulo: 'Valores',
     Texto: `
       Excelência <br>
       Inovação<br>
