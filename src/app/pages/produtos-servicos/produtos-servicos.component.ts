@@ -5,4 +5,60 @@ import { Component } from '@angular/core';
   templateUrl: './produtos-servicos.component.html',
   styleUrls: ['./produtos-servicos.component.scss'],
 })
-export class ProdutosServicosComponent {}
+export class ProdutosServicosComponent {
+  slides = [
+    {
+      img: 'assets/img/carroussel/solda.png',
+      alt: 'Solda',
+      hover: 'Solda',
+    },
+    {
+      img: 'assets/img/carroussel/acabamento.png',
+      alt: 'Acabamento',
+      hover: 'Acabamento',
+    },
+    {
+      img: 'assets/img/carroussel/montagem.png',
+      alt: 'Montagem',
+      hover: 'Montagem',
+    },
+    {
+      img: 'assets/img/carroussel/prensa.png',
+      alt: 'Prensa',
+      hover: 'Prensa',
+    },
+    {
+      img: 'assets/img/carroussel/retifica.png',
+      alt: 'Retifica',
+      hover: 'Retifica',
+    },
+    {
+      img: 'assets/img/carroussel/criacoes.png',
+      alt: 'Criações Próprias',
+      hover: 'Criações Próprias',
+    },
+  ];
+  slideConfig = {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+}

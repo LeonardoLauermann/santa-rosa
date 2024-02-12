@@ -26,6 +26,7 @@ export class ScrollTriggerDirective implements AfterViewInit {
         end: `bottom ${this.end}px`,
       },
       duration: 1,
+      y: '25px',
       opacity: 0,
     });
   }
