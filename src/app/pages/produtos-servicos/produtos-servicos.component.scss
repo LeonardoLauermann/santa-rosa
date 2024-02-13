@@ -3,12 +3,63 @@ section {
   .texto {
     max-width: 75%;
   }
-  .img-style {
-    transition: 0.5s;
+
+  .slide {
+    position: relative;
+
+    .img-style {
+      width: 100%;
+      height: auto;
+      transition: filter 0.3s ease;
+    }
+
     &:hover {
-      transform: scale(1.1);
-      content: attr(data-teste);
+      .img-style {
+        filter: blur(5px) brightness(70%);
+      }
+
+      .overlay {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .palavra {
+        transform: translateY(0);
+      }
+      .overlay {
+        opacity: 1;
+      }
+    }
+
+    &:not(:hover) {
+      .img-style {
+        filter: none;
+      }
+
+      .palavra {
+        transform: translateY(100%);
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .palavra {
       color: white;
+      font-size: 24px;
+      font-weight: bold;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
     }
   }
 }

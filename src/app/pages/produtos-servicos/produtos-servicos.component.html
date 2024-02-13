@@ -20,8 +20,22 @@
       #slickModal="slick-carousel"
       [config]="slideConfig"
     >
-      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <div
+        ngxSlickItem
+        *ngFor="let slide of slides"
+        class="slide"
+        (mouseover)="showOverlay($event)"
+        (mouseleave)="hideOverlay($event)"
+      >
         <img [src]="slide.img" [alt]="slide.alt" class="img-style img-fluid" />
+        <div
+          class="overlay"
+          [style.visibility]="overlayVisible ? 'visible' : 'hidden'"
+        >
+          <span class="palavra" [attr.data-teste]="slide.alt">{{
+            slide.alt
+          }}</span>
+        </div>
       </div>
     </ngx-slick-carousel>
   </div>

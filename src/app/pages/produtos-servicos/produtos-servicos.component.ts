@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./produtos-servicos.component.scss'],
 })
 export class ProdutosServicosComponent {
+  overlayVisible: boolean = false;
+
   slides = [
     {
       img: 'assets/img/carroussel/solda.png',
@@ -61,4 +63,12 @@ export class ProdutosServicosComponent {
       },
     ],
   };
+
+  showOverlay(event: MouseEvent) {
+    this.overlayVisible = true;
+  }
+
+  hideOverlay(event: MouseEvent) {
+    this.overlayVisible = false;
+  }
 }
