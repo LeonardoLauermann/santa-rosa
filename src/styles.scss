@@ -5,7 +5,41 @@ body {
 }
 body {
   margin: 0;
+  background-color: var(--cinza) !important;
 }
 
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
+
+.slick-next {
+  position: relative;
+  right: 50px !important;
+}
+
+.slick-prev {
+  position: relative;
+  left: 25px !important;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick" !important;
+  font-size: 40px !important;
+  line-height: 1 !important;
+  color: white !important;
+  opacity: 0.75 !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--cinza);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--azul);
+}
