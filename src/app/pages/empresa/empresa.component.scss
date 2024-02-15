@@ -1,3 +1,6 @@
+section {
+  margin: 70px 0;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -5,7 +8,6 @@
   grid-column-gap: 50px;
   grid-row-gap: 0px;
   justify-items: center;
-  margin: 100px 0;
 }
 
 .card {
@@ -16,7 +18,7 @@
   filter: drop-shadow(5px 5px 10px var(--background-section));
 }
 
-.title {
+.title-card {
   font-size: 1.5rem;
   height: 60px;
   line-height: 60px;

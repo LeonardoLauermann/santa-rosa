@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand text-center" href="#">Tornearia <br />Santa Rosa</a>
+  <a class="navbar-brand text-center" href="#home"
+    >Tornearia <br />Santa Rosa</a
+  >
   <button
     class="navbar-toggler"
     type="button"
@@ -13,23 +15,23 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div
-    class="collapse navbar-collapse justify-content-center"
+    class="collapse navbar-collapse justify-content-end pe-5"
     id="navbar"
     #navbarCollapse="ngbCollapse"
     [(ngbCollapse)]="navbarCollapsed"
   >
     <ul class="navbar-nav d-flex">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Inicio </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Produtos e Serviços</a>
+        <a class="nav-link" href="#servico">Produtos e Serviços</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Empresa</a>
+        <a class="nav-link" href="#empresa">Empresa</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
+        <a class="nav-link" href="#contato">Contato</a>
       </li>
     </ul>
   </div>

@@ -1,8 +1,13 @@
-<section class="card-container">
-  <ng-container *ngFor="let item of valores; trackBy: trackbyFn">
-    <div class="card" [id]="item.id" scrollTrigger>
-      <p class="title">{{ item.Titulo }}</p>
-      <p class="text" [innerHTML]="item.Texto"></p>
-    </div>
-  </ng-container>
+<section>
+  <header class="text-center">
+    <h1 class="title mb-5">Sobre Nós</h1>
+  </header>
+  <div class="card-container">
+    <ng-container *ngFor="let item of valores; trackBy: trackbyFn">
+      <div class="card" [id]="item.id" scrollTrigger>
+        <p class="title-card">{{ item.Titulo }}</p>
+        <p class="text" [innerHTML]="item.Texto"></p>
+      </div>
+    </ng-container>
+  </div>
 </section>

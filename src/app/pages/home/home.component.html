@@ -1,4 +1,17 @@
 <section>
-  <div class="background-filter"></div>
-  <button class="btn">Faça seu orçamento</button>
+  <div [class]="'position-relative'">
+    <div class="d-flex justify-content-end d-lg-inline">
+      <img [class]="'img-fluid'" [alt]="'Peças'" src="/assets/img/home.jpg" />
+    </div>
+    <h2 class="position-absolute texto">
+      CONCEPÇÃO <br />
+      E REALIZAÇÃO DE <br />
+      PROJETOS <br />
+      ESTRATÉGICOS
+    </h2>
+    <p class="position-absolute divisor"></p>
+    <a href="#contato"
+      ><button class="position-absolute btn">Faça seu orçamento</button></a
+    >
+  </div>
 </section>

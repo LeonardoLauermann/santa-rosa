@@ -1,4 +1,9 @@
 @import "./app/shared/scss/main.scss";
+@import "bootstrap/scss/bootstrap";
+
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   height: 100%;
@@ -8,8 +13,12 @@ body {
   background-color: var(--cinza) !important;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import "bootstrap/scss/bootstrap";
+.title {
+  font-family: "Orbitron";
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 .slick-next {
   position: relative;
@@ -42,4 +51,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--azul);
+}
+
+@media (max-width: 680px) {
+  .title {
+    font-size: 1.5rem !important;
+  }
 }
