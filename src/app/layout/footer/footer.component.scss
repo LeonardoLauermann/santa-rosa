@@ -36,7 +36,7 @@ svg path {
     transition: 0.5s;
     &:hover {
       transform: translateY(-10px);
-      filter: drop-shadow(2px 2px 2px var(--azul));
+      filter: drop-shadow(2px 2px 2px var(--amarelo));
     }
   }
 }
@@ -52,6 +52,6 @@ svg path {
     transition: 0.5s;
   }
   a:hover {
-    color: var(--azul);
+    color: var(--amarelo);
   }
 }
