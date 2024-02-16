@@ -28,7 +28,14 @@
         (mouseover)="showOverlay($event)"
         (mouseleave)="hideOverlay($event)"
       >
-        <img [src]="slide.img" [alt]="slide.alt" class="img-style img-fluid" />
+        <figure>
+          <img
+            loading="lazy"
+            [src]="slide.img"
+            [alt]="slide.alt"
+            class="img-style img-fluid"
+          />
+        </figure>
         <div
           class="overlay"
           [style.visibility]="overlayVisible ? 'visible' : 'hidden'"

@@ -1,10 +1,10 @@
 .navbar {
   background: var(--background);
   .navbar-nav {
-    gap: 40px;
+    gap: 35px;
     .nav-link {
       transition: 0.5s;
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: var(--branco);
       &:hover {
         color: var(--azul);

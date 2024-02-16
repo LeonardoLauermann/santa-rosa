@@ -16,7 +16,7 @@ section {
   }
 
   .texto {
-    font-family: "Orbitron";
+    font-family: var(--font-title);
     position: absolute;
     left: 3%;
     top: 20%;
