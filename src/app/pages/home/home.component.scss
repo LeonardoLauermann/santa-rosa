@@ -50,6 +50,19 @@ section {
     }
   }
 }
+@media (min-width: 1400px) {
+  .texto {
+    top: 10% !important;
+  }
+
+  .divisor {
+    top: calc(15% + 40px) !important;
+  }
+
+  .btn {
+    top: calc(17% + 40px) !important;
+  }
+}
 
 @media (max-width: 976px) {
   .texto {
@@ -61,7 +74,7 @@ section {
   }
 
   .btn {
-    top: calc(41% + 40px) !important;
+    top: calc(47% + 40px) !important;
   }
 }
 
@@ -77,7 +90,6 @@ section {
 
   .btn {
     top: calc(51% + 40px) !important;
-    padding: 5px 10px !important;
-    font-size: 0.7rem !important;
+    font-size: 1rem !important;
   }
 }

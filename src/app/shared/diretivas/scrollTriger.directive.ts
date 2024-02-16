@@ -18,8 +18,8 @@ export class ScrollTriggerDirective implements AfterViewInit {
       this.start = '780';
       this.end = '670';
     } else if (larguraTela <= 1366) {
-      this.start = '550';
-      this.end = '400';
+      this.start = '600';
+      this.end = '450';
     } else if (larguraTela <= 1980) {
       this.start = '830';
       this.end = '670';
