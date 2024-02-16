@@ -8,18 +8,18 @@ section {
     align-items: center;
   }
 
-  .img-fluid {
-    width: 100%;
+  img {
+    width: 100vw;
     height: auto;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.4);
   }
 
   .texto {
     font-family: var(--font-title);
     position: absolute;
     left: 3%;
-    top: 20%;
+    top: 16%;
     transform: translateY(-50%);
     color: var(--branco);
     font-size: 2.5rem;
@@ -28,7 +28,7 @@ section {
   .divisor {
     position: absolute;
     left: 3%;
-    top: calc(30% + 40px);
+    top: calc(24% + 40px);
     width: 200px;
     border-bottom: 5px solid var(--branco);
   }
@@ -36,7 +36,7 @@ section {
   .btn {
     position: absolute;
     left: 3%;
-    top: calc(35% + 40px);
+    top: calc(29% + 40px);
     padding: 10px 20px;
     color: var(--branco);
     background-color: var(--azul);
@@ -53,30 +53,30 @@ section {
 
 @media (max-width: 976px) {
   .texto {
-    top: 30% !important;
+    top: 24% !important;
   }
 
   .divisor {
-    top: calc(45% + 40px) !important;
+    top: calc(39% + 40px) !important;
   }
 
   .btn {
-    top: calc(50% + 40px) !important;
+    top: calc(41% + 40px) !important;
   }
 }
 
 @media (max-width: 620px) {
   .texto {
     font-size: 1.5rem !important;
-    top: 30% !important;
+    top: 24% !important;
   }
 
   .divisor {
-    top: calc(45% + 40px) !important;
+    top: calc(39% + 40px) !important;
   }
 
   .btn {
-    top: calc(60% + 40px) !important;
+    top: calc(51% + 40px) !important;
     padding: 5px 10px !important;
     font-size: 0.7rem !important;
   }
