@@ -10,32 +10,32 @@ export class ProdutosServicosComponent {
 
   slides = [
     {
-      img: 'assets/img/carroussel/solda.png',
+      img: 'assets/img/carroussel/solda.jpg',
       alt: 'Solda',
       hover: 'Solda',
     },
     {
-      img: 'assets/img/carroussel/acabamento.png',
+      img: 'assets/img/carroussel/acabamento.jpg',
       alt: 'Acabamento',
       hover: 'Acabamento',
     },
     {
-      img: 'assets/img/carroussel/montagem.png',
+      img: 'assets/img/carroussel/montagem.jpg',
       alt: 'Montagem',
       hover: 'Montagem',
     },
     {
-      img: 'assets/img/carroussel/prensa.png',
+      img: 'assets/img/carroussel/prensa.jpg',
       alt: 'Prensa',
       hover: 'Prensa',
     },
     {
-      img: 'assets/img/carroussel/retifica.png',
+      img: 'assets/img/carroussel/retifica.jpg',
       alt: 'Retifica',
       hover: 'Retifica',
     },
     {
-      img: 'assets/img/carroussel/criacoes.png',
+      img: 'assets/img/carroussel/criacoes.jpg',
       alt: 'Criações Próprias',
       hover: 'Criações Próprias',
     },
