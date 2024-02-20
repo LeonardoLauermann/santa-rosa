@@ -40,35 +40,33 @@ export class ProdutosServicosComponent {
       hover: 'Criações Próprias',
     },
   ];
-  slideConfig = {
-    slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    infinite: false,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
+  itemsPerSlide = 3;
+  singleSlideOffset = true;
+  pauseOnFocus = true;
+  noWrap = true;
+
+  ngOnInit(): void {
+    const larguraTela = screen.width;
+
+    if (larguraTela <= 680) {
+      this.itemsPerSlide = 1;
+    } else if (larguraTela <= 960) {
+      this.itemsPerSlide = 2;
+    } else if (larguraTela <= 1366) {
+      this.itemsPerSlide = 3;
+    } else {
+      this.itemsPerSlide = 4;
+    }
+  }
 
   showOverlay(event: MouseEvent) {
     this.overlayVisible = true;
+    this.pauseOnFocus = true;
   }
 
   hideOverlay(event: MouseEvent) {
     this.overlayVisible = false;
+    this.pauseOnFocus = false;
   }
 }

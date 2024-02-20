@@ -1,8 +1,8 @@
 <section>
-  <header class="text-center mb-3">
+  <header class="text-center mb-3" scrollTrigger>
     <h1 class="title mb-4">Produtos & Serviços</h1>
   </header>
-  <div class="text-center mb-3">
+  <div class="text-center mb-3" scrollTrigger>
     <div class="d-flex align-items-center justify-content-center">
       <p class="texto">
         A <b>Tornearia Santa Rosa</b> é reconhecida por sua excelência na
@@ -16,35 +16,38 @@
     </div>
   </div>
   <div>
-    <ngx-slick-carousel
+    <carousel
+      [pauseOnFocus]="pauseOnFocus"
+      [itemsPerSlide]="itemsPerSlide"
+      [singleSlideOffset]="singleSlideOffset"
+      [noWrap]="!noWrap"
+      [interval]="3000"
+      [startFromIndex]="5"
       class="carousel"
-      #slickModal="slick-carousel"
-      [config]="slideConfig"
+      scrollTrigger
     >
-      <div
-        ngxSlickItem
-        *ngFor="let slide of slides"
-        class="slide"
-        (mouseover)="showOverlay($event)"
-        (mouseleave)="hideOverlay($event)"
-      >
-        <figure>
-          <img
-            loading="lazy"
-            [src]="slide.img"
-            [alt]="slide.alt"
-            class="img-style img-fluid"
-          />
-        </figure>
+      <slide *ngFor="let slide of slides; let index = index">
         <div
-          class="overlay"
-          [style.visibility]="overlayVisible ? 'visible' : 'hidden'"
+          class="slide-content slide"
+          (mouseover)="showOverlay($event)"
+          (mouseleave)="hideOverlay($event)"
         >
-          <span class="palavra" [attr.data-teste]="slide.alt">{{
-            slide.alt
-          }}</span>
+          <figure>
+            <img
+              [src]="slide.img"
+              [alt]="slide.alt"
+              class="img-style img-fluid"
+            />
+          </figure>
+
+          <div
+            class="overlay"
+            [style.visibility]="'visible'"
+          >
+            <span class="palavra">{{ slide.alt }}</span>
+          </div>
         </div>
-      </div>
-    </ngx-slick-carousel>
+      </slide>
+    </carousel>
   </div>
 </section>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { PagesRoutingModule } from 'src/app/pages/pages-routing.module';
 import { ContainerComponent } from 'src/app/pages/container/container.component';
@@ -21,6 +21,6 @@ import { ScrollTriggerDirective } from 'src/app/shared/diretivas/scrollTriger.di
     HomeComponent,
     ScrollTriggerDirective,
   ],
-  imports: [CommonModule, PagesRoutingModule, SlickCarouselModule],
+  imports: [CommonModule, PagesRoutingModule, CarouselModule.forRoot()],
 })
 export class PagesModule {}
