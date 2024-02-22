@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutContainerComponent } from './layout-container/layout-container.component';
@@ -8,6 +8,6 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [LayoutContainerComponent, NavComponent, FooterComponent],
-  imports: [CommonModule, RouterModule, NgbCollapseModule],
+  imports: [CommonModule, RouterModule, NgbCollapseModule,NgOptimizedImage],
 })
 export class LayoutModule {}

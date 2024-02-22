@@ -2,7 +2,14 @@
   <div [class]="'position-relative'">
     <div class="d-flex justify-content-end d-lg-inline">
       <figure>
-        <img loading="eager" [class]="'img-fluid'" [alt]="'Peças'" src="/assets/img/home.jpg" />
+        <img
+          [class]="'img'"
+          [alt]="'Peças'"
+          ngSrc="/assets/img/home.jpg"
+          [width]="100"
+          [height]="100"
+          priority
+        />
       </figure>
     </div>
     <h2 class="position-absolute texto">
@@ -15,7 +22,7 @@
     <a
       href="https://wa.me/5551989566240/?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
       target="_blank"
-      ><button class="position-absolute btn">Faça seu orçamento</button></a
+      ><button class="position-absolute btn" id='faca-orcamento'>Faça seu orçamento</button></a
     >
   </div>
 </section>

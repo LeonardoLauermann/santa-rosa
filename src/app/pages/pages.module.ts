@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -21,6 +21,11 @@ import { ScrollTriggerDirective } from 'src/app/shared/diretivas/scrollTriger.di
     HomeComponent,
     ScrollTriggerDirective,
   ],
-  imports: [CommonModule, PagesRoutingModule, CarouselModule.forRoot()],
+  imports: [
+    CommonModule,
+    PagesRoutingModule,
+    CarouselModule.forRoot(),
+    NgOptimizedImage,
+  ],
 })
 export class PagesModule {}
