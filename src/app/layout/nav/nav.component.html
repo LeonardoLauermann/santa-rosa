@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark ">
   <a class="navbar-brand text-center" href="#home"
     >Tornearia Santa Rosa</a
   >
@@ -13,7 +13,7 @@
     aria-label="Toggle navigation"
     (click)="navbarCollapse.toggle()"
   >
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon "></span>
   </button>
   <div
     class="collapse navbar-collapse justify-content-end pe-5"
@@ -21,17 +21,17 @@
     #navbarCollapse="ngbCollapse"
     [(ngbCollapse)]="navbarCollapsed"
   >
-    <ul class="navbar-nav d-flex">
-      <li class="nav-item">
+    <ul class="navbar-nav d-flex justify-content-center">
+      <li class="nav-item text-center mt-3 mt-md-0">
         <a class="nav-link" href="#home">Inicio </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item text-center">
         <a class="nav-link" href="#servico">Produtos e Serviços</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item text-center">
         <a class="nav-link" href="#empresa">Empresa</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item text-center">
         <a class="nav-link" href="#contato">Contato</a>
       </li>
     </ul>
