@@ -1,10 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand text-center" href="#home"
-    >Tornearia Santa Rosa</a
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand text-center d-flex align-items-center" href="#home">
+      <img
+        loading="lazy"
+        ngSrc="/assets/img/Logo.png"
+        width="80"
+        height="80"
+        alt="Logo Instragam"
+        class='me-2'
+      />
+
+    Tornearia Santa Rosa</a
   >
   <button
     class="navbar-toggler"
-    id='botao-navbar'
+    id="botao-navbar"
     type="button"
     data-toggle="collapse"
     data-target="#navbar"
@@ -13,7 +22,7 @@
     aria-label="Toggle navigation"
     (click)="navbarCollapse.toggle()"
   >
-    <span class="navbar-toggler-icon "></span>
+    <span class="navbar-toggler-icon"></span>
   </button>
   <div
     class="collapse navbar-collapse justify-content-end pe-5"
