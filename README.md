@@ -31,7 +31,7 @@ Se você tiver alguma dúvida, sugestão ou precisar de assistência, entre em c
 
 Email: torneariastarosa@gmail.com
 
-Telefone: +51 98956-6240
+Telefone / WhatsApp: +51 9886-5190
 
 Visite nossa tornearia: 
 https://www.google.com/maps/place/Tornearia+Santa+Rosa/@-29.9230825,-51.1315638,17z/data=!3m1!4b1!4m6!3m5!1s0x9519713a8b1f5259:0x6df88674a18f959c!8m2!3d-29.9230825!4d-51.1315638!16s%2Fg%2F11f9x5621r?entry=ttu
